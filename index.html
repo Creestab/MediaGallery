@@ -2,10 +2,111 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Media Gallery</title>
-    <link href="style.css" rel="stylesheet"><!-- loads my custom stylesheet -->
+    <title>Grid Sample</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-
+  <body class="page" id="page">
+    <div class="slideshow-wrapper">
+      <div class="slide fade">
+        <div class="numberof">1 of 4</div>
+        <img src="assets/Bird.jpg"/>
+        <div class="captiontext">Birb</div>
+      </div><!-- end .slide.fade -->
+      <div class="slide fade">
+        <div class="numberof">2 of 4</div>
+        <img src="assets/Bunny.jpg"/>
+        <div class="captiontext">Bun</div>
+      </div><!-- end .slide.fade -->
+      <div class="slide fade">
+        <div class="numberof">3 of 4</div>
+        <img src="assets/Cat.jpg"/>
+        <div class="captiontext">Kitter</div>
+      </div><!-- end .slide.fade -->
+      <div class="slide fade">
+        <div class="numberof">4 of 4</div>
+        <img src="assets/Elephant.jpg"/>
+        <div class="captiontext">Tusky</div>
+      </div><!-- end .slide.fade -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;<!--unicode for less-than-sign--></a>
+        <a class="next" onclick="plusSlides(1)">&#10095;<!--unicode for greater-than-sign--></a>
+    </div><!--end slideshow-wrapper-->
+    <br>
+    <div class="text-center">
+      <span class="indicator" onclick="currentSlide(1)"></span>
+      <span class="indicator" onclick="currentSlide(2)"></span>
+      <span class="indicator" onclick="currentSlide(3)"></span>
+      <span class="indicator" onclick="currentSlide(4)"></span>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EdMPuteycTk" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+      <div class="card">
+        <div class="thumb"></div>
+        <h2>CARD TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <button class="link">+</button>
+      </div>
+    </div>
+    <footer class="info">
+      <p>&copy;2017</p>
+    </footer>
+    <script src="slideshow.js" type="text/javascript"></script>
   </body>
 </html>
