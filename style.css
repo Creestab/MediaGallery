@@ -42,6 +42,14 @@ video {
   background-size: cover; /*-- sets it to cover the div --*/
   background-position: center center; /*-- positions image in center vert. and horiz. --*/
 }
+.avatar {
+  max-height: 150px;
+  max-width: 230px;
+  display: block;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .link {
   position: absolute; /*-- sets button position to absolute --*/
   top: .5em; /*-- half a line from the top --*/
